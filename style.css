@@ -1,0 +1,161 @@
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Alinear el encabezado a izquiera y derecha */
+/* con display flex que se le pone al padre
+del elemento que quiero afectar
+en este caso a nav que es el papá de ul  */
+nav{
+    display: flex;
+    justify-content: end;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+#perfil{
+    border-radius: 50%;
+    height: 50px;
+}
+
+
+/* Quitar el margen - la orilla del borde de toda la pagina */
+body {
+    margin: 0%;
+}
+
+#logoGoogle{
+    width: 272px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    height: 68vh;
+    align-items: center;
+    
+    /* height: 62vh;
+    padding-top: 17vh; */
+
+}
+
+article{
+    text-align: center;
+}
+
+#buscador{
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    align-items: flex-end;
+    width: 530px;
+    margin-top: 1.5em;
+}
+
+/* hace al input mas grande que los demas
+en este caso es el espacio para ontroducir texto */
+#buscador input{
+    flex-grow: 1;
+    border: none;
+    /* se quita el borde al seleccionar la caja */
+    outline: none;
+}
+
+#buscador:hover{
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: transparent;
+}
+
+
+.icono-buscador {
+    display: inline-block;
+    width: 20px;
+    margin: 0px;
+}
+
+/* #textoMedio{
+   font-size: 13px;
+} */
+
+#botones{
+    margin-top: 10px;
+}
+
+#botones button{
+    /* aacomodar por dentro los botones */
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    padding: 0 16px;
+    height: 36px;
+   
+
+    /* Acomodar por fuera los botones */
+    margin: 11px 4px;
+}
+
+#botones button:hover:{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+footer p{
+    padding: 15px;
+    margin: 0px;
+}
+
+footer{
+    background-color: #f2f2f2;
+}
+
+#links-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Quitar puntos a las listas y poner 
+los elementos alineados en un solo renglon */
+ul{
+    padding-left: 0%;
+}
+
+ul li{
+    display: inline;
+    padding: 15px;
+}
+
+.linea-arriba{
+    border-top: 1px solid #f2f2f2 ;
+}
+
+/* links */
+
+header a{
+
+}
+
+footer a{
+ color: #202124;
+ text-decoration: none;
+ font-size: 14px;
+}
+
+/* Cuando pasa el cursor encima se 
+debe subrayar */
+footer a:hover{
+    text-decoration: underline;
+   }
+   
